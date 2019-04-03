@@ -8,7 +8,7 @@
 
 <body>
     <header class="header">
-        <a class="header__logo">
+        <a class="header__logo" href="index.html">
             <img class="header__logo-image" src="img/logotype-mobile.svg" width="33" height="38" alt="Кэт энерджи">
             <img class="header__title-image" src="img/title-mobile.svg" width="101" height="18" alt="Cat Energy">
         </a>
@@ -56,25 +56,27 @@
                 </li>
             </ul>
         </fieldset>
-        <h2>Контактные данные (владельца кота)</h2>
-        <div class="form__block">
-            <label class="form__title" for="email">E-mail<sup>*</sup>:</label>
-            <input class="form__text" type="text" name="email" id="email" placeholder="kuklachev@mail.ru">
-            <button class="form__email" type="button" aria-label="email">
-                <svg width="17" height="13">
-                    <title>email</title>
-                </svg>
-            </button>
-        </div>
-        <div class="form__block">
-            <label class="form__title" for="number">Телефон<sup>*</sup>:</label>
-            <input class="form__text" type="text" name="number" id="number" placeholder="8(960)900-60-90">
-            <button class="form__email" type="button" aria-label="Телефон">
-                <svg width="17" height="13">
-                    <title>Телефон</title>
-                </svg>
-            </button>
-        </div>
+        <fieldset>
+            <legend>Контактные данные (владельца кота)</legend>
+            <div class="form__block">
+                <label class="form__title" for="email">E-mail<sup>*</sup>:</label>
+                <input class="form__text" type="text" name="email" id="email" placeholder="kuklachev@mail.ru">
+                <button class="form__email" type="button" aria-label="email">
+                    <svg width="17" height="13">
+                        <title>email</title>
+                    </svg>
+                </button>
+            </div>
+            <div class="form__block">
+                <label class="form__title" for="number">Телефон<sup>*</sup>:</label>
+                <input class="form__text" type="text" name="number" id="number" placeholder="8(960)900-60-90">
+                <button class="form__email" type="button" aria-label="Телефон">
+                    <svg width="17" height="13">
+                        <title>Телефон</title>
+                    </svg>
+                </button>
+            </div>
+        </fieldset>
         <h2>Комментарий</h2>
         <textarea cols="50" rows="5" type="text" placeholder="Расскажите обо всех повадках кота"></textarea>
         <h2>Дополнительно</h2>
@@ -104,17 +106,17 @@
         </small>
     </form>
     </main>
+    <section class="contacts">
+        <h2 class="info-contacts__title">Приглашаем к сотрудничеству диллеров!</h2>
+        <p class="info-contacts__text">ул.Большая Конюшенская , д.19/8 Санкт-Петербург</p>
+        <img class="info-contacts__image" src="img/card.jpg" width="320" height="360" alt="Карта">
+    </section>
     <footer class="footer">
         <div class="footer__wrapper">
-            <div class="footer__contacts">
-                <h2 class="info-contacts__title">Приглашаем к сотрудничеству диллеров!</h2>
-                <p class="info-contacts__text">ул.Большая Конюшенская , д.19/8 Санкт-Петербург</p>
-                <img class="info-contacts__image" src="img/card.jpg" width="320" height="360" alt="Карта">
-            </div>
+            <a class="social__title">
+                <img class="social__title-image" src="img/title-mobile.svg" width="101" height="18" alt="Cat Energy">
+            </a>
             <div class="social">
-                <a class="social__title">
-                    <img class="social__title-image" src="img/title-mobile.svg" width="101" height="18" alt="Cat Energy">
-                </a>
                 <ul class="social__list">
                     <li class="social__item">
                         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
