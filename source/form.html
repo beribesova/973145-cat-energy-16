@@ -4,16 +4,19 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи - подбор программы</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <a class="header__logo" href="index.html">
-            <img class="header__logo-image" src="img/logotype-mobile.svg" width="33" height="38" alt="Кэт энерджи">
-            <img class="header__title-image" src="img/title-mobile.svg" width="101" height="18" alt="Cat Energy">
+        <a class="header__logo">
+            <img class="header__logo-image" src="img/logo-mobile.svg" width="200" height="50" alt="Cat Energy">
         </a>
         <nav class="navigation">
-            <button class="navigation__toggle" type="button">Открыть меню</button>
+            <button class="navigation__toggle" type="button">
+              <img class="navigation__image" src="img/icon-mobile-menu.svg" width="24" height="18" alt="Открыть меню">
+            </button>
             <ul class="navigation__list site-list">
                 <li class="site-list__item ">
                     <a href="index.html">Главная</a>
@@ -28,6 +31,8 @@
         </nav>
     </header>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="form__name">Подбор программы</h2>
+      <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <div class="form__block">
             <label class="form__title" for="name">Имя<sup>*</sup>:</label>
             <input class="form__text" type="text" name="name" id="name" placeholder="Барсик">
@@ -57,7 +62,7 @@
             </ul>
         </fieldset>
         <fieldset>
-            <legend>Контактные данные (владельца кота)</legend>
+            <legend class="form__headline">Контактные данные (владельца кота)</legend>
             <div class="form__block">
                 <label class="form__title" for="email">E-mail<sup>*</sup>:</label>
                 <input class="form__text" type="text" name="email" id="email" placeholder="kuklachev@mail.ru">
@@ -77,9 +82,9 @@
                 </button>
             </div>
         </fieldset>
-        <h2>Комментарий</h2>
-        <textarea cols="50" rows="5" type="text" placeholder="Расскажите обо всех повадках кота"></textarea>
-        <h2>Дополнительно</h2>
+        <h2 class="form__headline">Комментарий</h2>
+        <textarea class="form__comment" cols="50" rows="5" type="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+        <h2 class="form__headline">Дополнительно</h2>
         <fieldset class="form__column">
             <ul class="form__list">
                 <li class="list__item">
@@ -109,30 +114,32 @@
     <section class="contacts">
         <h2 class="contacts__title">Приглашаем к сотрудничеству диллеров!</h2>
         <p class="contacts__text">ул.Большая Конюшенская , д.19/8 Санкт-Петербург</p>
-        <img class="contacts__image" src="img/card.jpg" width="320" height="360" alt="Карта">
+        <img class="contacts__image" src="img/bg-map-mobile@1x.png" width="320" height="360" alt="Карта">
     </section>
     <footer class="footer">
         <div class="footer__wrapper">
             <a class="footer__logo">
-                <img class="footer__logo-image" src="img/title-mobile.svg" width="101" height="18" alt="Cat Energy">
+                <img class="footer__logo-image" src="img/logo-footer.svg" width="101" height="18" alt="Cat Energy">
             </a>
             <div class="social">
                 <ul class="social__list">
                     <li class="social__item">
-                        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+                        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                          <img class="social__icon" src="img/icon-vk.svg" width="22" height="12" alt="Мы в Вконтакте"></a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+                        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                          <img class="social__icon" src="img/icon-insta.svg" width="16" height="16" alt="Мы в Инстаграме"></a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+                        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                          <img class="social__icon" src="img/icon-fb.svg" width="10" height="19" alt="Мы в Фейсбуке"></a>
                     </li>
-                </ul>
             </div>
             <div class="copyright">
-                <b class="copyright__text">Разработано:</b>
-                <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-                    <img class="copyright__logo-image" src="img/logohtmlacademy.jpg" width="226" height="30" alt="HTML Academy"></a>
+                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" alt="Разработано HTML Academy">HTML Academy
+                    <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+                </a>
             </div>
         </div>
     </footer>
