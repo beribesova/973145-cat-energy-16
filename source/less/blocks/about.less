@@ -7,3 +7,32 @@
 .about__description {
   font-family: "Arial", sans-serif;
 }
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .about__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    width: 355px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .about__list {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .about__item {
+    width: 325px;
+  }
+}

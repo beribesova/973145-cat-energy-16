@@ -1,5 +1,6 @@
 .programs__item {
   background-color: #f2f2f2;
+  margin: 10px 20px;
 }
 
 .programs__title {
@@ -15,4 +16,31 @@
 .programs__catalog {
   text-transform: uppercase;
   color: #444444;
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .programs__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .programs__item {
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs__list {
+    flex-direction: row;
+  }
+
+  .programs__item {
+    margin: 40px;
+  }
 }
