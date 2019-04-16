@@ -3,6 +3,10 @@
   line-height: 24px;
 }
 
+.other-goods__list {
+  list-style: none;
+}
+
 .other-goods__item-title {
   font-size: 16px;
   line-height: 16px;
@@ -29,4 +33,33 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: #63a73a;
+}
+
+@media (min-width: @tablet-width) {
+  .other-goods__item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .other-goods__item-title {
+    width: 50%;
+  }
+
+  .other-goods__description {
+    width: 50%;
+  }
+
+  .other-goods__order {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .other-goods__item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
 }

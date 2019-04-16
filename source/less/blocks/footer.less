@@ -1,5 +1,37 @@
-.copyright__link {
-  font-family: "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 16px;
+.footer {
+  background-color: #f2f2f2;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+@media (min-width: @tablet-width) {
+  .footer {
+    padding: 30px;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__logo {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .footer {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }

@@ -1,19 +1,29 @@
 .programs__item {
   background-color: #f2f2f2;
-  margin: 10px 20px;
+  margin: 20px;
+  padding: 20px;
 }
 
 .programs__title {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-transform: uppercase;
   font-size: 24px;
   line-height: 38px;
 }
 
 .programs__text {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-family: "Arial", sans-serif;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .programs__catalog {
+  display: block;
+  padding-top: 20px;
   text-transform: uppercase;
   color: #444444;
 }
@@ -28,10 +38,27 @@
   .programs__list {
     display: flex;
     flex-direction: column;
+    margin: 30px;
   }
 
   .programs__item {
     margin: 0;
+    padding: 50px;
+  }
+
+  .programs__title {
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  .programs__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .programs__catalog {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
@@ -41,6 +68,7 @@
   }
 
   .programs__item {
+    width: 50%;
     margin: 40px;
   }
 }
