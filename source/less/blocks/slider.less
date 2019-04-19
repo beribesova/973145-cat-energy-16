@@ -1,3 +1,11 @@
+.slider__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
 .slider__toggle {
   font-size: 16px;
   line-height: 20px;
@@ -10,7 +18,16 @@
 }
 
 @media (min-width: @tablet-width) {
-  .slider {
+  .slider__wrapper {
+    width: 768px;
     background-color: #f2f2f2;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .slider__wrapper {
+    width: 1300px;
   }
 }

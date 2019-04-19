@@ -1,10 +1,15 @@
 .intro {
   background-color: #ffffff;
   color: #ffffff;
+  width: 100%;
+}
+
+.intro__wrapper {
+  box-sizing: border-box;
   background-image: url("/img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
-  width: 100%;
+  width: 320px;
   margin: 0 auto;
 }
 
@@ -48,23 +53,23 @@
 @media (min-width: @tablet-width) {
   .intro {
     background-color: #ffffff;
-    background-image: none;
     color: #000000;
-    width: 768px;
   }
 
   .intro__wrapper {
+    background-image: none;
+    width: 768px;
     padding-left: 120px;
-    padding-right: 75px;
   }
 
   .intro__slogan {
+    width: 65%;
     text-align: left;
     font-size: 60px;
     line-height: 60px;
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     justify-content: flex-start;
   }
 
@@ -92,19 +97,13 @@
     height: 52px;
     margin: 0 auto;
     position: absolute;
-    top: 330px;
+    top: 410px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .intro {
-    width: 100%;
     color: #000000;
-    background-image: url("/img/index-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    /*background-size: cover;
-    width: 100%;*/
   }
 
   .intro__slogan {
@@ -125,7 +124,10 @@
   }
 
   .intro__wrapper {
-    padding-left: 185px;
+    background-image: url("/img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1300px;
   }
 
   .intro__link {
