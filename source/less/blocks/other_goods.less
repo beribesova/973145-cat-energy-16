@@ -85,8 +85,13 @@
 }
 
 @media (min-width: @desktop-width) {
-  .other-goods__wrapper {
-    width: 1300px;
+  .other-goods {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+    .other-goods__wrapper {
+    flex-grow: 2;
   }
 
   .other-goods__item {
@@ -96,6 +101,6 @@
   }
 
   .other-goods__order {
-    width: auto;
+    width: 245px;
   }
 }
