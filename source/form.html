@@ -10,28 +10,31 @@
 </head>
 
 <body>
-    <header class="header">
-        <a class="header__logo" href="index.html">
-            <img class="header__logo-image" src="img/logo-mobile.svg" width="200" height="50" alt="Cat Energy">
-        </a>
-        <nav class="navigation">
-            <button class="navigation__toggle" type="button">
-              <img class="navigation__image" src="img/icon-mobile-menu.svg" width="24" height="18" alt="Открыть меню">
-            </button>
-            <ul class="navigation__list site-list">
-                <li class="site-list__item ">
-                    <a href="index.html">Главная</a>
-                </li>
-                <li class="site-list__item">
-                    <a href="catalog.html">Каталог продукции</a>
-                </li>
-                <li class="site-list__item site-list__item--active">
-                    <a>Подбор программы</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+  <header class="header">
+    <div class="header__wrapper">
+    <a class="header__logo">
+      <img class="header__logo-image" src="img/logo-mobile.svg" width="200" height="50" alt="Cat Energy">
+    </a>
+    <nav class="navigation navigation--nojs">
+      <button class="navigation__toggle" type="button">
+        <img class="navigation__image" src="img/icon-mobile-menu.svg" width="24" height="18" alt="Открыть меню">
+      </button>
+      <ul class="navigation__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list__item site-list__item--active">
+          <a class="site-list__link">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+    </div>
+</header>
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form__wrapper">
       <h2 class="form__name">Подбор программы</h2>
       <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <div class="form__block">
@@ -62,7 +65,7 @@
                 </li>
             </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="form__column">
             <legend class="form__headline">Контактные данные (владельца кота)</legend>
             <div class="form__block">
                 <label class="form__title" for="email">E-mail<sup>*</sup>:</label>
@@ -110,12 +113,18 @@
         <small class="form__legend">
             <sup>*</sup> — обязательные поля
         </small>
+      </div>
     </form>
     </main>
     <section class="contacts">
-        <h2 class="contacts__title">Приглашаем к сотрудничеству диллеров!</h2>
-        <p class="contacts__text">ул.Большая Конюшенская , д.19/8 Санкт-Петербург</p>
+        <div class="contacts__wrapper">
+          <div class="contacts__info">
+            <h2 class="contacts__title">Приглашаем к сотрудничеству диллеров!</h2>
+            <p class="contacts__text">ул.Большая Конюшенская , д.19/8 Санкт-Петербург</p>
+          </div>
+        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1555329724939!5m2!1sru!2sru" width="320" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>-->
         <img class="contacts__image" src="img/bg-map-mobile@1x.png" width="320" height="360" alt="Карта">
+        </div>
     </section>
     <footer class="footer">
         <div class="footer__wrapper">
