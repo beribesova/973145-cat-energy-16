@@ -1,3 +1,11 @@
+.view-more {
+  display: block;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .view-more__title {
   text-transform: uppercase;
   font-size: 16px;
@@ -21,4 +29,39 @@
   font-size: 16px;
   line-height: 20px;
   background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .view-more {
+    width: 324px;
+    box-sizing: border-box;
+    padding: 40px;
+    border: 1px solid #f2f2f2;
+  }
+
+  .view-more__button {
+    width: 249px;
+  }
+
+  .view-more__title {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .view-more__text {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .view-more {
+    width: 245px;
+  }
+
+  .view-more__button {
+    width: 169px;
+  }
 }

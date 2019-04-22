@@ -1,4 +1,43 @@
 .header {
+  width: 100%;
+}
+
+.header__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  position: relative;
   background-color: #ffffff;
   color: #444444;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.header__logo {
+  padding: 12px 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .header__wrapper {
+    width: 768px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header__logo {
+    width: 220px;
+    padding: 20px 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .header__wrapper {
+    width: 1300px;
+    justify-content: space-between;
+    flex-direction: flex-end;
+  }
+
+  .header__logo {
+    width: 245px;
+  }
 }

@@ -1,16 +1,32 @@
 .intro {
-  background-color: #63a73a;
+  background-color: #ffffff;
   color: #ffffff;
-  background-image: url("..index-background-mobile@1x.jpg");
+  width: 100%;
+}
+
+.intro__wrapper {
+  box-sizing: border-box;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .intro__slogan {
+  margin: 0;
   font-size: 36px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
   line-height: 36px;
 }
 
 .intro__text {
+  margin: 0;
+  padding: 0;
   text-transform: uppercase;
+  text-align: center;
   font-size: 14px;
   line-height: 18px;
 }
@@ -21,4 +37,100 @@
   color: #ffffff;
   font-size: 14px;
   line-height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.intro__image {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .intro {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .intro__wrapper {
+    background-image: none;
+    width: 768px;
+    padding-left: 120px;
+  }
+
+  .intro__slogan {
+    width: 65%;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    justify-content: flex-start;
+  }
+
+  .intro__text {
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 45px;
+  }
+
+  .intro__image {
+    width: 709px;
+    height: 609px;
+    position: relative;
+  }
+
+  .intro__link {
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 245px;
+    height: 52px;
+    margin: 0 auto;
+    position: absolute;
+    top: 410px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    color: #000000;
+  }
+
+  .intro__slogan {
+    width: 50%;
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .intro__text {
+    padding-bottom: 40px;
+  }
+
+  .intro__image {
+    width: 552px;
+    height: 499px;
+  }
+
+  .intro__wrapper {
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1300px;
+  }
+
+  .intro__link {
+    top: 380px;
+  }
 }
