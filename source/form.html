@@ -35,21 +35,22 @@
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
       <div class="form__wrapper">
       <h2 class="form__name">Подбор программы</h2>
+      <div class="form__positioner">
       <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <div class="form__block">
-            <label class="form__title" for="name">Имя<sup>*</sup>:</label>
+            <label class="form__title" for="name">Имя:<sup>*</sup></label>
             <input class="form__text" type="text" name="name" id="name" placeholder="Барсик">
         </div>
         <div class="form__block">
-            <label class="form__title" for="weight">Вес<sup>*</sup>:</label>
+            <label class="form__title" for="weight">Вес (кг):<sup>*</sup></label>
             <input class="form__text" type="text" name="weight" id="weight" placeholder="7">
         </div>
         <div class="form__block">
-            <label class="form__title" for="age">Возраст<sup>*</sup>:</label>
+            <label class="form__title" for="age">Возраст (лет):<sup>*</sup></label>
             <input class="form__text" type="text" name="age" id="age" placeholder="7">
         </div>
         <fieldset class="form__column">
-            <ul class="form__list">
+            <ul class="form__list form__list--program">
                 <li class="form__item">
                     <input class="form__checkbox" type="checkbox" tabindex="-1" name="loseweight" id="loseweight" checked>
                     <label class="form__checkbox-label" tabindex="0" for="loseweight">Похудение</label>
@@ -64,32 +65,44 @@
                 </li>
             </ul>
         </fieldset>
+      </div>
         <fieldset class="form__column">
             <legend class="form__headline">Контактные данные (владельца кота)</legend>
+            <div class="form__positioner">
             <div class="form__block">
                 <label class="form__title" for="email">E-mail<sup>*</sup>:</label>
                 <input class="form__text" type="text" name="email" id="email" placeholder="kuklachev@mail.ru">
                 <button class="form__email" type="button" aria-label="email">
-                    <svg width="17" height="13">
-                        <title>email</title>
+                    <svg version="1.1" id="Layer_1" width="17" height="13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
+                      <title>email</title>
+                      <path d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
                     </svg>
                 </button>
             </div>
             <div class="form__block">
                 <label class="form__title" for="number">Телефон<sup>*</sup>:</label>
                 <input class="form__text" type="text" name="number" id="number" placeholder="8(960)900-60-90">
-                <button class="form__email" type="button" aria-label="Телефон">
-                    <svg width="17" height="13">
-                        <title>Телефон</title>
+                <button class="form__phone" type="button" aria-label="Телефон">
+                    <svg version="1.1" id="Layer_1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                      <title>Телефон</title>
+                      <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
+                      <path
+                        d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+                      c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
+                      C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
+                      C7.8,20,8.1,19.7,8.1,19.4z"/>
                     </svg>
                 </button>
             </div>
+          </div>
         </fieldset>
         <h2 class="form__headline">Комментарий</h2>
-        <textarea class="form__comment" cols="50" rows="5" type="text" placeholder="Расскажите обо всех повадках кота"></textarea>
-        <h2 class="form__headline">Дополнительно</h2>
+        <div class="form__positioner">
+        <textarea class="form__comment" cols="40" rows="5" type="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
+      <h2 class="form__headline">Дополнительно</h2>
         <fieldset class="form__column">
-            <ul class="form__list">
+            <ul class="form__list form__list--goods">
                 <li class="list__item">
                     <input class="form__checkbox" type="checkbox" tabindex="-1" name="sweetener" id="sweetener" checked>
                     <label class="form__checkbox-label" tabindex="0" for="sweetener">Сахарозаменитель</label>
@@ -110,7 +123,7 @@
         </fieldset>
         <button class="form__button button" type="submit" aria-label="Отправить заявку">Отправить заявку</button>
         <small class="form__legend">
-            <sup>*</sup> — обязательные поля
+            <sup>*</sup> — Обязательные поля
         </small>
       </div>
     </form>
