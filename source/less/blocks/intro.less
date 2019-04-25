@@ -11,6 +11,11 @@
   background-position: top;
   width: 320px;
   margin: 0 auto;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .intro__slogan {
@@ -50,10 +55,13 @@
   padding-top: 27px;
   display: block;
   margin: 0 auto;
+  width: 280px;
+  height: 271px;
 }
 
 @media (min-width: @tablet-width) {
   .intro {
+    min-height: 865px;
     background-color: #ffffff;
     color: #000000;
   }
@@ -87,7 +95,9 @@
     padding-top: 0;
     width: 709px;
     height: 609px;
-    position: relative;
+    position: absolute;
+    top: 345px;
+    right: 80px;
   }
 
   .intro__link {
@@ -107,6 +117,7 @@
 @media (min-width: @desktop-width) {
   .intro {
     color: #000000;
+    min-height: 650px;
   }
 
   .intro::before {
@@ -119,6 +130,11 @@
     height: 696px;
     top: 0;
     right: 0;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 720px auto;
+    }
   }
 
   .intro__slogan {
@@ -134,9 +150,12 @@
   }
 
   .intro__image {
+    position: absolute;
     z-index: 1;
     width: 552px;
     height: 499px;
+    top: 140px;
+    right: 375px;
   }
 
   .intro__wrapper {
@@ -145,6 +164,6 @@
   }
 
   .intro__link {
-    top: 380px;
+    top: 420px;
   }
 }
