@@ -142,7 +142,16 @@ legend {
 }
 
 @media (min-width: @desktop-width) {
+  .example {
+    position: relative;
+  }
+
+  .example__color {
+    background-color: #f2f2f2;
+  }
+
   .example__positioner {
+    padding-bottom: 70px;
     width: 1300px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -164,11 +173,14 @@ legend {
   }
 
   .example__description {
+    width: 475px;
     display: block;
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
+    padding-top: 70px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 40px;
   }
 
   .example__info {
@@ -196,6 +208,7 @@ legend {
     text-align: center;
     margin-left: 0;
     display: flex;
+    padding-top: 30px;
     justify-content: space-between;
   }
 
