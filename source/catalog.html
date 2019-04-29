@@ -12,7 +12,11 @@
     <header class="header">
         <div class="header__wrapper">
         <a class="header__logo" href="index.html">
-          <img class="header__logo-image" src="img/logo-mobile.svg" width="200" height="50" alt="Cat Energy">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="header__logo-image" src="img/logo-mobile.svg" alt="Cat Energy">
+          </picture>
         </a>
         <nav class="navigation navigation--nojs">
           <button class="navigation__toggle" type="button">
@@ -229,7 +233,15 @@
                     <li>
                         <a class="view-more">
                             <h2 class="visually-hidden">Показать больше</h2>
-                            <span class="view-more__plus">+</span>
+                            <svg version="1.1" id="Layer_1" class="view-more__plus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" style="enable-background:new 0 0 30 30;" xml:space="preserve">
+                              <style type="text/css">
+                                .st0 {
+                                  fill: #d3d3d3;
+                                }
+                              </style>
+                              <title>Показать больше</title>
+                              <polygon class="st0" points="30,14 16,14 16,0 14,0 14,14 0,14 0,16 14,16 14,30 16,30 16,16 30,16 "/>
+                            </svg>
                             <b class="view-more__title">Показать еще 100500 товаров</b>
                             <p class="view-more__text">На самом деле вкусов гораздо больше!</p>
                             <button class="view-more__button button" type="button">Показать все</button>
@@ -324,32 +336,43 @@
       </picture>
     </section>
     <footer class="footer">
-        <div class="footer__wrapper">
-            <a class="footer__logo">
-                <img class="footer__logo-image" src="img/logo-footer.svg" width="101" height="18" alt="Cat Energy">
-            </a>
-            <div class="social">
-                <ul class="social__list">
-                    <li class="social__item">
-                        <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                          <img class="social__icon" src="img/icon-vk.svg" width="22" height="12" alt="Мы в Вконтакте"></a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-                          <img class="social__icon" src="img/icon-insta.svg" width="16" height="16" alt="Мы в Инстаграме"></a>
-                    </li>
-                    <li class="social__item">
-                        <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-                          <img class="social__icon" src="img/icon-fb.svg" width="10" height="19" alt="Мы в Фейсбуке"></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="copyright">
-                <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" alt="Разработано HTML Academy">HTML Academy
-                    <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
-                </a>
-            </div>
+      <div class="footer__wrapper">
+        <a class="footer__logo">
+          <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
+        </a>
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/icon-vk.svg">
+                  <img class="social__icon social__icon--vk" src="img/icon-vk-mobile.svg" alt="Мы в Вконтакте">
+                </picture>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/icon-insta.svg">
+                  <img class="social__icon social__icon--inst" src="img/icon-insta-mobile.svg" alt="Мы в Инстаграме">
+                </picture>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/icon-fb.svg">
+                  <img class="social__icon social__icon--fcb" src="img/icon-fb-mobile.svg" alt="Мы в Фейсбуке">
+                </picture>
+              </a>
+            </li>
+          </ul>
         </div>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" alt="Разработано HTML Academy"><div class="copyright__link-text">HTML
+            Academy</div>
+            <img class="copyright__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+          </a>
+      </div>
     </footer>
 </body>
 

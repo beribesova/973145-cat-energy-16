@@ -76,7 +76,7 @@
             <h3 class="programs__title programs__title--slim">Похудение</h3>
             <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора
               на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес </p>
-            <a class="programs__catalog button" href="#">Каталог Slim<span>&#8594;</span></a>
+            <a class="programs__catalog button" href="#">Каталог Slim</a>
           </li>
           <li class="programs__item programs__item--pro">
               <div class="programs__image programs__image--pro">
@@ -108,7 +108,7 @@
             <h3 class="programs__title programs__title--pro">Набор массы</h3>
             <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
               поможет вашему коту нарастить необходимые мыщцы!</p>
-            <a class="programs__catalog button" href="#">Каталог Pro<span>&#8594;</span></a>
+            <a class="programs__catalog button" href="#">Каталог Pro</a>
           </li>
         </ul>
       </div>
@@ -157,8 +157,6 @@
         <div class="example__info">
         <p class="example__stats"><span class="example__weight"> 5 кг <span class="example__legend">снижение веса</span></span><span class="example__weight"> 60 дней <span
             class="example__legend">затрачено времени</span></span></p>
-        <!---    <p class="example__stats"><fieldset class="example__weight"> 5 кг <legend class="example__legend">снижение веса</legend></fieldset><fieldset class="example__weight"> 60 дней <legend
-              class="example__legend">затрачено времени</legend></fieldset></p>-->
         <small class="example__text">
           <span>Затраты на питание:</span><span> 15000руб.</span>
         </small>
@@ -170,11 +168,19 @@
               <picture>
                   <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
-              <img class="slider__image" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот до">
+              <img class="slider__image slider__image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот до">
               </picture>
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+            <img class="slider__image slider__image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот до">
+            </picture>
           <div class="slider__toggles">
             <button class="slider__toggle" type="button">Было</button>
             <button class="slider__toggle" type="button">Стало</button>
+            <span class="before-after__toggle">
+              <span class="before-after__toggle-pin"></span>
+            </span>
           </div>
         </div>
         </div>
@@ -205,15 +211,27 @@
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <img class="social__icon" src="img/icon-vk.svg" width="22" height="12" alt="Мы в Вконтакте"></a>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-vk.svg">
+                <img class="social__icon social__icon--vk" src="img/icon-vk-mobile.svg" alt="Мы в Вконтакте">
+              </picture>
+            </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
-              <img class="social__icon" src="img/icon-insta.svg" width="16" height="16" alt="Мы в Инстаграме"></a>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-insta.svg">
+                <img class="social__icon social__icon--inst" src="img/icon-insta-mobile.svg" alt="Мы в Инстаграме">
+              </picture>
+            </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <img class="social__icon" src="img/icon-fb.svg" width="10" height="19" alt="Мы в Фейсбуке"></a>
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/icon-fb.svg">
+                <img class="social__icon social__icon--fcb" src="img/icon-fb-mobile.svg" alt="Мы в Фейсбуке">
+              </picture>
+            </a>
           </li>
         </ul>
       </div>
