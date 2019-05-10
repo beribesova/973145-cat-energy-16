@@ -22,8 +22,8 @@
   font-weight: 400;
   margin: 0;
   font-size: 36px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 27px;
+  padding-bottom: 24px;
   text-align: center;
   line-height: 36px;
 }
@@ -38,7 +38,7 @@
 }
 
 .intro__link {
-  background-color: #63a73a;
+  background-color: #68b738;
   text-transform: uppercase;
   color: #ffffff;
   font-size: 14px;
@@ -51,17 +51,26 @@
   margin: 0 auto;
 }
 
+.intro__link:hover {
+  background-color: #5eaa2f;
+}
+
+.intro__link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .intro__image {
   padding-top: 27px;
   display: block;
   margin: 0 auto;
   width: 280px;
   height: 271px;
+  padding-bottom: 2px;
 }
 
 @media (min-width: @tablet-width) {
   .intro {
-    min-height: 865px;
+    min-height: 855px;
     background-color: #ffffff;
     color: #000000;
   }
@@ -78,7 +87,7 @@
     font-size: 60px;
     line-height: 60px;
     display: flex;
-    padding-top: 55px;
+    padding-top: 45px;
     padding-bottom: 40px;
     justify-content: flex-start;
   }
@@ -96,8 +105,8 @@
     width: 709px;
     height: 609px;
     position: absolute;
-    top: 345px;
-    right: 80px;
+    top: 340px;
+    right: 30px;
   }
 
   .intro__link {
@@ -117,7 +126,7 @@
 @media (min-width: @desktop-width) {
   .intro {
     color: #000000;
-    min-height: 650px;
+    min-height: 610px;
   }
 
   .intro::before {
@@ -130,6 +139,7 @@
     height: 696px;
     top: 0;
     right: 0;
+    //right: -45px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/index-background-desktop@2x.jpg");
@@ -141,7 +151,7 @@
     width: 420px;
     font-size: 60px;
     line-height: 60px;
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 40px;
   }
 
@@ -155,7 +165,7 @@
     width: 552px;
     height: 499px;
     top: 140px;
-    right: 335px;
+    right: 285px;
   }
 
   .intro__wrapper {
@@ -164,6 +174,6 @@
   }
 
   .intro__link {
-    top: 420px;
+    top: 455px;
   }
 }

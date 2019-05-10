@@ -75,6 +75,39 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  border: 2px solid #e6e6e6;
+}
+
+.form__text:hover {
+  outline: none;
+  border: 2px solid #cdcdcd;
+}
+
+.form__text:hover + .form__email path {
+  fill: #68b738;
+}
+
+.form__text:hover + .form__phone path {
+  fill: #68b738;
+}
+
+.form__text:active,
+.form__text:focus {
+  outline: none;
+  border: 2px solid #444444;
+}
+
+.form__text:invalid {
+  outline: none;
+  border: 2px solid #ff8282;
+}
+
+.form__text:invalid + .form__email path {
+  fill: #ff8282;
+}
+
+.form__text:invalid + .form__phone path {
+  fill: #ff8282;
 }
 
 .form__checkbox-label {
@@ -97,10 +130,18 @@
   display: block;
   width: 280px;
   height: 40px;
-  background-color: #63a73a;
+  background-color: #68b738;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.form__button:hover {
+  background-color: #5eaa2f;
+}
+
+.form__button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .form__label--radio {
@@ -495,11 +536,7 @@
     width: 1300px;
     padding-left: 40px;
     padding-right: 40px;
-  }
-
-  .form__text,
-  .form__comment {
-    border: 2px solid #e6e6e6;
+    margin-bottom: 20px;
   }
 
   .form__description {
