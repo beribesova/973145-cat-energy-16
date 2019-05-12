@@ -8,6 +8,7 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 7px;
 }
 
 .form__positioner {
@@ -26,6 +27,16 @@
   padding: 0;
 }
 
+.form__positioner--contacts {
+  padding-top: 67px;
+  padding-bottom: 25px;
+}
+
+.form__positioner--comment {
+  padding-top: 45px;
+  padding-bottom: 35px;
+}
+
 .form__name {
   font-weight: 400;
   margin: 0 auto;
@@ -33,17 +44,17 @@
   box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 25px;
   font-size: 36px;
   line-height: 60px;
 }
 
 .form__description {
   margin: 0 auto;
-  width: 320px;
+  width: 280px;
   box-sizing: border-box;
-  padding-left: 20px;
+  padding-left: 0;
   padding-right: 20px;
   padding-bottom: 40px;
   font-size: 14px;
@@ -56,7 +67,7 @@
   display: flex;
   align-items: center;
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 17px;
 }
 
 .form__title {
@@ -111,14 +122,19 @@
 }
 
 .form__checkbox-label {
-  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
 }
 
 .list__item {
-  padding-bottom: 20px;
+  padding-bottom: 25px;
+}
+
+.list__item:nth-child(4) {
+  padding-bottom: 0;
 }
 
 .form__button {
@@ -177,7 +193,6 @@
 
 .list__item--goods {
   margin: 0;
-  margin-bottom: 15px;
 }
 
 .form__checkbox-label--add {
@@ -210,6 +225,9 @@
 }
 
 .form__comment {
+  box-sizing: border-box;
+  width: 280px;
+  min-height: 150px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -240,13 +258,14 @@
   font-size: 14px;
   line-height: 16px;
   display: block;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 30px;
   text-align: center;
 }
 
 .form__headline--contacts {
   width: 200px;
+  padding-right: 0;
 }
 
 .form__column {
@@ -282,14 +301,19 @@
 
 .form__list {
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 50px;
   padding-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   list-style: none;
   width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+}
+
+.form__list--goods {
+  padding-top: 55px;
+  padding-bottom: 0;
 }
 
 .form__list--program :nth-child(3) {
@@ -298,10 +322,12 @@
 
 .form__list--program {
   border: 1px solid #e6e6e6;
+  padding-top: 28px;
+  padding-bottom: 25px;
 }
 
 .form__item {
-  padding-bottom: 20px;
+  padding-bottom: 24px;
 }
 
 .form__item input[type="checkbox"] {
@@ -356,6 +382,32 @@
     width: 768px;
     padding-left: 70px;
     padding-right: 70px;
+    padding-bottom: 14px;
+  }
+
+  .form__label--radio::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    background-color: #ffffff;
+    border: 10px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #d1d1d1;
+  }
+
+  .form__checkbox-label--add::before {
+    width: 38px;
+    height: 38px;
+  }
+
+  .form__checkbox-label {
+    padding-left: 55px;
+    padding-top: 3px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .form__column {
@@ -371,7 +423,7 @@
     padding-top: 40px;
     padding-left: 70px;
     padding-right: 70px;
-    padding-bottom: 50px;
+    padding-bottom: 58px;
   }
 
   .form__button {
@@ -380,6 +432,16 @@
     height: 52px;
     font-size: 20px;
     line-height: 20px;
+  }
+
+  .form__headline {
+    margin-top: -25px;
+    position: absolute;
+    margin-left: 30px;
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .form__column--goods {
@@ -397,24 +459,32 @@
     padding-right: 30px;
     font-size: 60px;
     line-height: 60px;
+    padding-top: 45px;
   }
 
   .form__description {
+    padding-top: 30px;
     width: 768px;
+    padding-right: 350px;
     font-size: 20px;
     line-height: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 70px;
+    padding-bottom: 65px;
   }
 
   .form__list {
     width: auto;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .form__list--goods {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    padding-top: 0;
   }
 
   .form__footer {
@@ -435,8 +505,16 @@
     margin: 0;
   }
 
+  .form__item {
+    padding-bottom: 33px;
+  }
+
   .list__item--goods {
-    width: 220px;
+    width: 285px;
+  }
+
+  .list__item {
+    padding-bottom: 50px;
   }
 
   .form__positioner {
@@ -450,12 +528,28 @@
   }
 
   .form__positioner--contacts {
-    padding-top: 80px;
+    padding-top: 85px;
+  }
+
+  .form__positioner--goods {
+    padding-top: 75px;
+    padding-bottom: 55px;
+  }
+
+  .form__email {
+    top: 20px;
+    right: 15px;
+  }
+
+  .form__phone {
+    top: 18px;
+    right: 15px;
   }
 
   .form__title {
     font-size: 20px;
     line-height: 20px;
+    padding-right: 20px;
   }
 
   .form__text {
@@ -463,24 +557,19 @@
     line-height: 20px;
   }
 
-  .form__checkbox-label {
-    font-size: 20px;
-    line-height: 20px;
-  }
-
   .form__comment {
+    padding: 20px;
+    padding-top: 17px;
+    width: 630px;
+    height: 175px;
     flex-grow: 1;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .form__headline {
-    position: absolute;
-    margin-left: 70px;
-    font-size: 36px;
-    line-height: 36px;
-    padding-left: 40px;
-    padding-right: 40px;
+  .form__positioner--comment {
+    padding-top: 85px;
+    padding-bottom: 85px;
   }
 
   .form__headline--contacts {
@@ -495,7 +584,11 @@
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 25px;
-    padding-bottom: 25px;
+    padding-bottom: 32px;
+  }
+
+  .form__block {
+    padding-bottom: 18px;
   }
 }
 
@@ -534,16 +627,17 @@
 
   .form__name {
     width: 1300px;
+    padding-top: 25px;
     padding-left: 40px;
     padding-right: 40px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   .form__description {
     width: 1300px;
     margin: 0 auto;
     padding-left: 40px;
-    padding-right: 40px;
+    padding-right: 900px;
   }
 
   .form__column--program {
@@ -570,24 +664,42 @@
   }
 
   .list__item--goods {
-    width: 285px;
+    width: 190px;
   }
 
   .form__place {
     width: 1300px;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 52px;
     box-sizing: border-box;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
   }
 
+  .form__comment {
+    width: 1220px;
+    height: 175px;
+  }
+
+  .form__positioner--comment {
+    padding-bottom: 90px;
+  }
+
   .form__list--goods {
     padding-left: 0;
     padding-top: 0;
-    padding-right: 0;
-    padding-bottom: 50px;
+    padding-bottom: 7px;
+    padding-right: 55px;
+  }
+
+  .form__button {
+    width: 570px;
+  }
+
+  .form__footer {
+    width: 835px;
+    padding-bottom: 25px;
   }
 }

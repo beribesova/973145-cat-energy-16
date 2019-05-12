@@ -20,7 +20,7 @@
 }
 
 .other-goods__item {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   border-top: 1px solid #f2f2f2;
 }
 
@@ -34,6 +34,8 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 15px;
 }
 
 .other-goods__link {
@@ -44,7 +46,7 @@
 .other-goods__description {
   width: 280px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 13px;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
@@ -81,9 +83,36 @@
 
 @media (min-width: @tablet-width) {
   .other-goods__wrapper {
+    position: relative;
     width: 768px;
+    border-top: 3px solid #63a73a;
     padding-left: 30px;
     padding-right: 30px;
+    margin-top: 55px;
+    padding-top: 90px;
+  }
+
+  .other-goods__title {
+    top: -55px;
+    position: absolute;
+    font-size: 36px;
+    line-height: 36px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #ffffff;
+  }
+
+  .other-goods__item-title {
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 0;
+  }
+
+  .other-goods__link {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .other-goods__item {
@@ -95,36 +124,56 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 10px;
+    padding-bottom: 27px;
     padding-left: 40px;
     padding-right: 40px;
   }
 
   .other-goods__order {
     width: 100%;
+    margin-top: 12px;
+  }
+
+  .other-goods__description {
+    width: 230px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+  }
+
+  .other-goods__description td:nth-child(1) {
+    text-align: right;
   }
 }
 
 @media (min-width: @desktop-width) {
   .other-goods {
+    margin-top: 55px;
+    border-top: 3px solid #63a73a;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
   }
 
   .other-goods__wrapper {
+    padding-top: 93px;
+    margin-top: 0;
     width: 1300px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 90px;
+    padding-bottom: 85px;
     padding-left: 40px;
     padding-right: 40px;
+    border-top: none;
   }
 
   .other-goods__title {
-    width: 100%;
+    width: auto;
+    left: 0;
+    padding-left: 40px;
   }
 
   .other-goods__item {
@@ -138,6 +187,7 @@
   }
 
   .other-goods__order {
+    margin-top: 0;
     width: 245px;
   }
 
@@ -152,6 +202,7 @@
 
   .other-goods__description {
     width: 285px;
+    margin-left: 100px;
   }
 
   .other-goods__description td:nth-child(1) {
