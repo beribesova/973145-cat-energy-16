@@ -8,7 +8,7 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 22px;
 }
 
 .about__title {
@@ -17,8 +17,8 @@
   line-height: 60px;
   display: flex;
   justify-content: flex-start;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin-top: 18px;
+  margin-bottom: 27px;
 }
 
 .about__description {
@@ -26,7 +26,8 @@
   margin: 0;
   font-family: "Arial", sans-serif;
   display: block;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .about__item {
@@ -66,8 +67,8 @@
   .about__title {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 45px;
+    margin-bottom: 70px;
   }
 
   .about__list {
@@ -81,33 +82,36 @@
 
   .about__item:nth-child(1) {
     background-image: url("../img/1.png");
-    background-position: 70% 30%;
+    background-position: 75% 10%;
     background-repeat: no-repeat;
+    padding-bottom: 65px;
   }
 
   .about__item:nth-child(2) {
     background-image: url("../img/2.png");
-    background-position: 70% 30%;
+    background-position: 75% 5%;
     background-repeat: no-repeat;
+    padding-bottom: 65px;
   }
 
   .about__item:nth-child(3) {
     background-image: url("../img/3.png");
-    background-position: 70% 30%;
+    background-position: 75% 10%;
     background-repeat: no-repeat;
+    padding-bottom: 40px;
   }
 
   .about__item:nth-child(4) {
     background-image: url("../img/4.png");
-    background-position: 70% 30%;
+    background-position: 75% 10%;
     background-repeat: no-repeat;
+    padding-bottom: 40px;
   }
 
   .about__item {
-    width: 260px;
+    width: 275px;
     min-height: 250px;
     flex-direction: column;
-    padding-bottom: 30px;
   }
 
   .about__image {
@@ -119,12 +123,17 @@
   }
 
   .about__description {
+    width: auto;
     font-size: 16px;
     line-height: 24px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .about {
+    border: none;
+  }
+
   .about__wrapper {
     padding-left: 40px;
     padding-right: 40px;
@@ -137,12 +146,34 @@
     padding-right: 0;
   }
 
+  .about__title {
+    margin-top: 70px;
+    margin-bottom: 75px;
+  }
+
   .about__item {
     width: 325px;
     margin-right: 80px;
   }
 
+  .about__item:nth-child(1) {
+    background-position: 70% 5%;
+    padding-bottom: 0;
+  }
+
+  .about__item:nth-child(2) {
+    background-position: 90% 5%;
+    padding-bottom: 0;
+  }
+
+  .about__item:nth-child(3) {
+    background-position: 95% 5%;
+    padding-bottom: 0;
+  }
+
   .about__item:nth-child(4) {
+    background-position: 100% 5%;
     margin-right: 0;
+    padding-bottom: 0;
   }
 }

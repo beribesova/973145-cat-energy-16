@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 28px;
 }
 
 .slider__toggles::before {
@@ -32,6 +32,16 @@
   border: none;
   background-color: transparent;
   padding: 0;
+  padding-bottom: 7px;
+  border-bottom: 1px dotted #bebebe;
+}
+
+.slider__toggle:hover {
+  border-bottom: 1px solid #989898;
+}
+
+.slider__toggle:active {
+  border-bottom: none;
 }
 
 .slider__image {
@@ -41,9 +51,41 @@
   height: 232px;
 }
 
+.slider__image--after {
+  display: none;
+}
+
+.before-after__toggle {
+  position: relative;
+  width: 82px;
+  height: 12px;
+  z-index: 1;
+  background-color: #ffffff;
+  border: 1px solid #dfdfdf;
+  border-radius: 5px;
+  top: 3px;
+}
+
+.before-after__toggle::after {
+  position: absolute;
+  content: "";
+  z-index: 5;
+  width: 35px;
+  max-width: 70px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 2px;
+  top: 3px;
+  left: 6px;
+}
+
 @media (min-width: @tablet-width) {
   .slider {
     background-color: #f2f2f2;
+    position: relative;
+    min-height: 425px;
+    align-items: flex-end;
+    display: flex;
   }
 
   .slider__wrapper {
@@ -53,18 +95,61 @@
   }
 
   .slider__image {
+    position: absolute;
+    top: -150px;
     width: 690px;
     height: 517px;
+  }
+
+  .before-after__toggle {
+    width: 428px;
+    height: 6px;
+    border: 0;
+    margin-top: 5px;
+    background-color: #dcdcdc;
+  }
+
+  .before-after__toggle::after {
+    width: 8px;
+    height: 8px;
+    background-color: #68b738;
+    border-radius: 50%;
+    top: -14px;
+    box-shadow: 0 2px 5px 0 #cdcdcd;
+    border: 12px solid #ffffff;
+    left: 185px;
+  }
+
+  .slider__toggle {
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .slider__toggles {
+    width: 620px;
+    padding-top: 0;
+    padding-bottom: 75px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .slider {
     width: 650px;
+    min-height: none;
+    padding-top: 35px;
+  }
+
+  .slider__toggle {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .slider__toggles {
-    padding-top: 330px;
+    width: 620px;
+    padding-top: 0;
+    padding-bottom: 75px;
   }
 
   .slider__wrapper {
@@ -72,8 +157,14 @@
   }
 
   .slider__image {
-    top: 0;
+    top: -180px;
     position: absolute;
     margin: 0;
+    right: 40px;
+  }
+
+  .before-after__toggle::after {
+    border: 12px solid #ffffff;
+    left: 185px;
   }
 }

@@ -1,7 +1,22 @@
 .copyright__link {
+  width: 280px;
+  color: #000000;
   padding: 20px;
   display: flex;
   justify-content: space-between;
+}
+
+.copyright__link path {
+  fill: #666666;
+}
+
+.copyright__link:hover path {
+  fill: #68b738;
+}
+
+.copyright__link:active {
+  color: #000000;
+  opacity: 0.3;
 }
 
 .copyright__link-text {
@@ -13,12 +28,15 @@
 }
 
 .copyright__logo-image {
-  height: 34px;
+  width: 40px;
+  height: 40px;
 }
 
 @media (min-width: @tablet-width) {
   .copyright__link {
     padding: 0;
+    width: auto;
+    margin-left: 20px;
   }
 
   .copyright__link-text {

@@ -6,9 +6,6 @@
 .site-list__link {
   color: #111111;
   padding: 5px;
-}
-
-.site-list a {
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -23,6 +20,7 @@
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
 }
+
 
 .site-list a[href] {
   &:hover {
@@ -39,42 +37,43 @@
 
 @media (min-width: @tablet-width) {
   .site-list__link {
+    font-size: 18px;
+    line-height: 25px;
     color: #222222;
+    border: none;
+    padding: 0;
+    background: none;
+    padding-bottom: 7px;
   }
 
   .site-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    align-items: center;
   }
 
   .site-list__item {
-    margin-right: 32px;
+    padding: 10px 19px;
 
     &:last-child {
       margin-right: 0;
     }
   }
 
-  .site-list__item a {
-    padding: 0;
-    padding-top: 40px;
-    padding-bottom: 10px;
-
-    background: none;
-    border: none;
+  .site-list__link--active {
+    border-bottom: 2px solid #63a73a;
   }
 
   .site-list__item a[href] {
     &:hover {
       background-color: #ffffff;
-      border-bottom: 2px solid #63a73a;
+      opacity: 0.6;
     }
 
     &:active {
       background-color: #ffffff;
-      border-bottom: 2px solid #63a73a;
+      color: #222222;
       opacity: 0.3;
     }
   }
@@ -82,7 +81,19 @@
 
 @media (min-width: @desktop-width) {
   .site-list__link {
+    font-size: 20px;
+    line-height: 25px;
     color: #ffffff;
+    padding-bottom: 7px;
+    background-color: transparent;
+
+    &--active {
+      border-bottom: 2px solid #ffffff;
+    }
+  }
+
+  .site-list__link--color.site-list__link--active {
+    border-bottom: 2px solid #63a73a;
   }
 
   .site-list__link--color {
@@ -90,8 +101,11 @@
   }
 
   .site-list__item {
+    padding-top: 22px;
     margin-right: 0;
     color: #ffffff;
+    padding-right: 19px;
+    padding-left: 19px;
 
     &--active::after {
       right: 30px;
@@ -99,22 +113,18 @@
     }
   }
 
-  .site-list__item a {
-    padding-right: 31px;
-    padding-left: 31px;
-  }
-
-  .site-list__item a[href] {
+  .site-list__item .site-list__link[href] {
     &:hover {
-      color: #ffffff;
-      background-color: #63a73a;
-      border-bottom: 2px solid #ffffff;
+      background-color: transparent;
     }
 
     &:active {
-      color: #ffffff;
       background-color: #63a73a;
-      border-bottom: 2px solid #ffffff;
     }
+  }
+
+  .site-list__item .site-list__link--color[href]:active {
+    color: #000000;
+    background-color: transparent;
   }
 }
