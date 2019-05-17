@@ -132,7 +132,7 @@ legend {
   .example__stats {
     font-size: 30px;
     line-height: 37px;
-    width: 50%;
+    width: 52%;
   }
 
   .example__text {
@@ -152,7 +152,8 @@ legend {
   }
 
   .example__color {
-    background-color: #f2f2f2;
+    position: relative;
+    background-image: linear-gradient(to right, #f2f2f2 0, #f2f2f2 calc(100% - 325px), #e9e9e9 calc(100% - 325px), #e9e9e9 100%);
   }
 
   .example__positioner {
@@ -162,11 +163,12 @@ legend {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: #f2f2f2;
+    background-image: linear-gradient(to right, #f2f2f2 0, #f2f2f2 calc(100% - 325px), #e9e9e9 calc(100% - 325px), #e9e9e9 100%);
+    z-index: 2;
   }
 
   .example__wrapper {
-    width: 650px;
+    width: 610px;
     padding-left: 0;
     padding-right: 0;
     margin: 0;
@@ -185,10 +187,10 @@ legend {
     display: block;
     box-sizing: border-box;
     margin: 0;
-    padding-top: 70px;
+    padding-top: 73px;
     padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 15px;
+    padding-bottom: 40px;
+    padding-right: 0;
   }
 
   .example__info {
