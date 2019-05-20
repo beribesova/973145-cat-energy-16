@@ -1,8 +1,12 @@
 .other-goods {
   width: 100%;
+  border-top: 3px solid #63a73a;
+  padding-top: 35px;
+  margin-top: 45px;
 }
 
 .other-goods__wrapper {
+  position: relative;
   box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
@@ -11,12 +15,16 @@
 }
 
 .other-goods__title {
+  background-color: #ffffff;
+  position: absolute;
   font-weight: 400;
   margin: 0;
+  top: -50px;
   font-size: 24px;
   line-height: 24px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-left: 20px;
+  left: 0;
+  padding-right: 20px;
 }
 
 .other-goods__item {
@@ -82,6 +90,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .other-goods {
+    padding-top: 0;
+    margin-top: 0;
+    border: none;
+  }
+
   .other-goods__wrapper {
     position: relative;
     width: 768px;
@@ -93,7 +107,8 @@
   }
 
   .other-goods__title {
-    top: -55px;
+    top: -25px;
+    left: 30px;
     position: absolute;
     font-size: 36px;
     line-height: 36px;

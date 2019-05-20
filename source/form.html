@@ -84,69 +84,74 @@
           </fieldset>
         </div>
       </div>
-
-      <div class="form__positioner form__positioner--contacts">
-        <h2 class="form__headline form__headline--contacts">Контактные данные (владельца кота)</h2>
-        <div class="form__block form__block--contacts">
-          <label class="form__title" for="email">E-mail<sup>*</sup>:</label>
-          <input class="form__text" type="email" name="email" id="email" placeholder="kuklachev@mail.ru">
-          <button class="form__email" type="button" aria-label="email">
-            <svg version="1.1" width="17" height="13" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13"
-              style="enable-background:new 0 0 17 13;" xml:space="preserve">
-              <use xlink:href="#icon-mail"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="form__block form__block--contacts">
-          <label class="form__title" for="number">Телефон<sup>*</sup>:</label>
-          <input class="form__text" type="tel" name="number" id="number"
-            pattern="\8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" placeholder="8(960)900-60-90">
-          <button class="form__phone" type="button" aria-label="Телефон">
-            <svg version="1.1" id="Layer_1" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20"
-              style="enable-background:new 0 0 20 20;" xml:space="preserve">
-              <use xlink:href="#icon-phone"></use>
-            </svg>
-          </button>
+      <div class="form__wrap">
+        <div class="form__positioner form__positioner--contacts">
+          <h2 class="form__headline form__headline--contacts">Контактные данные (владельца кота)</h2>
+          <div class="form__block form__block--contacts">
+            <label class="form__title" for="email">E-mail<sup>*</sup>:</label>
+            <input class="form__text" type="email" name="email" id="email" placeholder="kuklachev@mail.ru">
+            <button class="form__email" type="button" aria-label="email">
+              <svg version="1.1" width="17" height="13" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13"
+                style="enable-background:new 0 0 17 13;" xml:space="preserve">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="form__block form__block--contacts">
+            <label class="form__title" for="number">Телефон<sup>*</sup>:</label>
+            <input class="form__text" type="tel" name="number" id="number"
+              pattern="\8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+              placeholder="8(960)900-60-90">
+            <button class="form__phone" type="button" aria-label="Телефон">
+              <svg version="1.1" id="Layer_1" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20"
+                style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                <use xlink:href="#icon-phone"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-
-      <div class="form__positioner form__positioner--comment">
-        <h2 class="form__headline">Комментарий</h2>
-        <textarea class="form__comment" cols="40" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+      <div class="form__wrap">
+        <div class="form__positioner form__positioner--comment">
+          <h2 class="form__headline">Комментарий</h2>
+          <textarea class="form__comment" cols="40" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
       </div>
+      <div class="form__wrap">
+        <div class="form__positioner form__positioner--goods">
+          <h2 class="form__headline">Дополнительно</h2>
+          <fieldset class="form__column form__column--goods">
+            <ul class="form__list form__list--goods">
+              <li class="list__item list__item--goods">
+                <input class="form__checkbox" type="checkbox" tabindex="-1" name="sweetener" id="sweetener" checked>
+                <label class="form__checkbox-label form__checkbox-label--add" tabindex="0"
+                  for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="list__item list__item--goods">
+                <input class="form__checkbox" type="checkbox" tabindex="-1" name="water" id="water">
+                <label class="form__checkbox-label form__checkbox-label--add" tabindex="0" for="water">Питьевая
+                  вода</label>
+              </li>
+              <li class="list__item list__item--goods">
+                <input class="form__checkbox" type="checkbox" tabindex="-1" name="milk" id="milk">
+                <label class="form__checkbox-label form__checkbox-label--add" tabindex="0" for="milk">Молоко</label>
+              </li>
+              <li class="list__item list__item--goods">
+                <input class="form__checkbox" type="checkbox" tabindex="-1" name="vitamins" id="vitamins">
+                <label class="form__checkbox-label form__checkbox-label--add" tabindex="0"
+                  for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
 
-      <div class="form__positioner form__positioner--goods">
-        <h2 class="form__headline">Дополнительно</h2>
-        <fieldset class="form__column form__column--goods">
-          <ul class="form__list form__list--goods">
-            <li class="list__item list__item--goods">
-              <input class="form__checkbox" type="checkbox" tabindex="-1" name="sweetener" id="sweetener" checked>
-              <label class="form__checkbox-label form__checkbox-label--add" tabindex="0"
-                for="sweetener">Сахарозаменитель</label>
-            </li>
-            <li class="list__item list__item--goods">
-              <input class="form__checkbox" type="checkbox" tabindex="-1" name="water" id="water">
-              <label class="form__checkbox-label form__checkbox-label--add" tabindex="0" for="water">Питьевая
-                вода</label>
-            </li>
-            <li class="list__item list__item--goods">
-              <input class="form__checkbox" type="checkbox" tabindex="-1" name="milk" id="milk">
-              <label class="form__checkbox-label form__checkbox-label--add" tabindex="0" for="milk">Молоко</label>
-            </li>
-            <li class="list__item list__item--goods">
-              <input class="form__checkbox" type="checkbox" tabindex="-1" name="vitamins" id="vitamins">
-              <label class="form__checkbox-label form__checkbox-label--add" tabindex="0" for="vitamins">Витамины</label>
-            </li>
-          </ul>
-        </fieldset>
-
-        <div class="form__footer">
-          <button class="form__button button" type="submit" aria-label="Отправить заявку">Отправить заявку</button>
-          <small class="form__legend">
-            <sup>*</sup> — Обязательные поля
-          </small>
+          <div class="form__footer">
+            <button class="form__button button" type="submit" aria-label="Отправить заявку">Отправить заявку</button>
+            <small class="form__legend">
+              <sup>*</sup> — Обязательные поля
+            </small>
+          </div>
         </div>
       </div>
     </form>
@@ -158,9 +163,10 @@
           <p class="contacts__text">ул.Большая Конюшенская , д.19/8<br><br> Санкт-Петербург</p>
         </div>
       </div>
-      <iframe class="contacts__image"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1555329724939!5m2!1sru!2sru"
-        width="320" height="360" style="border:0" allowfullscreen></iframe>
+      <div class="contacts__image">
+        <iframe class="contacts__map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1555329724939!5m2!1sru!2sru"
+          width="320" height="360" style="border:0" allowfullscreen></iframe></div>
     </section>
   </main>
   <footer class="footer">
